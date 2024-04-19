@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streaming App</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-2 d-none" id="playlist">
+                <input type="text" id="searchInput" class="form-control search-bar" placeholder="Search Channel">
+                <!-- Playlist items will be added here -->
+            </div>
+            <div class="col-md-10">
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" id="m3uURL" class="form-control" placeholder="Enter M3U URL">
+                    <div class="input-group-btn">
+                        <button id="loadM3U" class="btn btn-primary btn-go">Go</button>
+                    </div>
+                </div>
+                <video id="videoPlayer" controls autoplay muted></video>
+            </div>
+        </div>
+    </div>
+    <div id="billedMsg" class="billed-msg d-none"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
